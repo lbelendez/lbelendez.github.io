@@ -1,7 +1,129 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Leaf Tea México</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hola MLT</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Mighty Leaf Tea México</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#sustainability">Sustentabilidad</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Descubre la perfección en cada taza</h1>
+                <p>Tés e infusiones de la más alta calidad ahora en México.</p>
+                <a href="#products" class="cta">Explorar Productos</a>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Sobre Mighty Leaf Tea</h2>
+                <p>Mighty Leaf Tea es reconocido mundialmente por sus tés e infusiones artesanales, con ingredientes cuidadosamente seleccionados para brindar una experiencia de sabor única.</p>
+                <img src="images/about-tea.jpg" alt="Tés artesanales">
+            </div>
+        </section>
+        <section id="products" class="section">
+            <div class="container">
+                <h2>Nuestros Productos</h2>
+                <div class="product-grid">
+
+                    <div class="product-item">
+                        <img src="images/green_tea_tropical.jpg" alt="Green Tea Tropical">
+                        <h3>Green Tea Tropical</h3>
+                        <p>Hojas de té verde suave armoniosamente mezcladas con dulces frutas tropicales.</p>
+                    </div>
+    
+                    <div class="product-item">
+                        <img src="images/organic_earl_grey.jpg" alt="Organic Earl Grey">
+                        <h3>Organic Earl Grey</h3>
+                        <p>Té negro orgánico infusionado con aceite de bergamota para un sabor clásico.</p>
+                    </div>
+    
+                    <div class="product-item">
+                        <img src="images/chamomile_citrus.jpg" alt="Chamomile Citrus">
+                        <h3>Chamomile Citrus</h3>
+                        <p>Mezcla relajante de manzanilla y cítricos para una experiencia calmante.</p>
+                    </div>
+    
+                    <div class="product-item">
+                        <img src="images/mint_melange.jpg" alt="Mint Melange">
+                        <h3>Mint Melange</h3>
+                        <p>Una refrescante mezcla de menta para revitalizar tus sentidos.</p>
+                    </div>
+    
+                    <div class="product-item">
+                        <img src="images/jasmine_green_tea.jpg" alt="Jasmine Green Tea">
+                        <h3>Jasmine Green Tea</h3>
+                        <p>Té verde perfumado con flores de jazmín para un aroma embriagador.</p>
+                    </div>
+    
+                    <div class="product-item">
+                        <img src="images/african_nectar.jpg" alt="African Nectar">
+                        <h3>African Nectar</h3>
+                        <p>Té Rooibos africano con matices dulces y afrutados.</p>
+                    </div>
+    
+                    <div class="product-item">
+                        <img src="images/white_orchard.jpg" alt="White Orchard">
+                        <h3>White Orchard</h3>
+                        <p>Té blanco combinado con frutas dulces para una experiencia delicada.</p>
+                    </div>
+    
+                    <div class="product-item">
+                        <img src="images/breakfast_blend.jpg" alt="Breakfast Blend">
+                        <h3>Breakfast Blend</h3>
+                        <p>Una mezcla robusta de té negro, perfecta para comenzar el día.</p>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <section id="sustainability" class="section">
+            <div class="container">
+                <h2>Compromiso con la Sustentabilidad</h2>
+                <p>En Mighty Leaf Tea, creemos en cuidar del planeta. Por ello, utilizamos empaques biodegradables y trabajamos con proveedores que comparten nuestra visión ecológica.</p>
+                <img src="images/sustainability.jpg" alt="Sustentabilidad">
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <p>¿Interesado en nuestros productos? Escríbenos y nos pondremos en contacto contigo.</p>
+                <form action="#" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mighty Leaf Tea México. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
