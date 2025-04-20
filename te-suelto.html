@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Té Suelto | Mighty Leaf Tea México</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .selector { display: flex; justify-content: center; margin-top: 20px; gap: 20px; }
+        .selector button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ccc;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .selector button.active {
+            background-color: #444;
+            color: white;
+        }
+        .productos { display: none; flex-wrap: wrap; justify-content: center; margin-top: 30px; gap: 20px; }
+        .productos.active { display: flex; }
+        .producto {
+            width: 280px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .producto:hover { transform: scale(1.05); }
+        .producto img {
+            height: 290px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="index.html"><img src="images/MLT_Logo_Reverse_Stack.png" alt="Logo" height="60"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="te-en-bolsa.html">Té en Bolsa</a></li>
+                <li><a href="te-suelto.html">Té Suelto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar" style="margin-left: 20px;">
+            <input type="text" id="searchInput" placeholder="Buscar tés..." style="padding: 6px 10px; border-radius: 4px; border: none;">
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="selector">
+        <button class="tab-button active" data-tab="negros">Negros</button>
+        <button class="tab-button" data-tab="verdes">Verdes</button>
+        <button class="tab-button" data-tab="infusiones">Infusiones</button>
+    </div>
+
+    <div id="negros" class="productos active">
+
+        <div class="producto" onclick="location.href='producto/organic-breakfast.html'">
+            <img src="images/1LB_org_breakfast.jpg" alt="Organic Breakfast"
+                 onmouseover="this.src='images/loose_organic_breakfast.jpg'"
+                 onmouseout="this.src='images/1LB_org_breakfast.jpg'">
+            <h3>Organic Breakfast</h3>
+            <p>Una mezcla robusta de las mejores hojas de té negro orgánico: estupendo solo o con leche.</p>
+        </div>
+        
+        <div class="producto" onclick="location.href='producto/organic-earl-grey.html'">
+            <img src="images/1LB_org_earl_grey.jpg" alt="Organic Earl Grey"
+                 onmouseover="this.src='images/loose_organic_earl_grey.jpg'"
+                 onmouseout="this.src='images/1LB_org_earl_grey.jpg'">
+            <h3>Organic Earl Grey</h3>
+            <p>Elaborado con té negro de Ceilán y China de gran altura y notas de bergamota.</p>
+        </div>
+        
+    </div>
+
+    <div id="verdes" class="productos">
+
+        <div class="producto" onclick="location.href='producto/green-tea-tropical.html'">
+            <img src="images/1LB_green_tea_tropical.jpg" alt="Green Tea Tropical"
+                 onmouseover="this.src='images/loose_green_tea_tropical.jpg'"
+                 onmouseout="this.src='images/1LB_green_tea_tropical.jpg'">
+            <h3>Green Tea Tropical</h3>
+            <p>Mezcla inspirada de suaves hojas de té verde y frutas tropicales.</p>
+        </div>
+        
+        <div class="producto" onclick="location.href='producto/organic-spring-jasmine.html'">
+            <img src="images/1LB_org_spring_jasmine.jpg" alt="Organic Spring Jasmine"
+                 onmouseover="this.src='images/loose_organic_spring_jasmine.jpg'"
+                 onmouseout="this.src='images/1LB_org_spring_jasmine.jpg'">
+            <h3>Organic Spring Jasmine</h3>
+            <p>Té verde perfumado con flores de jazmín dulces.</p>
+        </div>
+        
+        <div class="producto" onclick="location.href='producto/organic-matcha.html'">
+            <img src="images/1LB_ORGANIC_MATCHA.jpg" alt="Organic Matcha"
+                 onmouseover="this.src='images/loose_organic_matcha.jpg'"
+                 onmouseout="this.src='images/1LB_ORGANIC_MATCHA.jpg'">
+            <h3>Organic Matcha</h3>
+            <p>Matcha orgánico de cuerpo cremoso con toques de mar.</p>
+        </div>
+        
+    </div>
+
+    <div id="infusiones" class="productos">
+
+        <div class="producto" onclick="location.href='producto/chamomile-citrus.html'">
+            <img src="images/1LB_chamomile_citrus.jpg" alt="Chamomile Citrus"
+                 onmouseover="this.src='images/loose_chamomile_citrus.jpg'"
+                 onmouseout="this.src='images/1LB_chamomile_citrus.jpg'">
+            <h3>Chamomile Citrus</h3>
+            <p>Infusión de flores de manzanilla, naranja dulce y limón.</p>
+        </div>
+        
+        <div class="producto" onclick="location.href='producto/organic-african-nectar.html'">
+            <img src="images/1LB_org_african_nectar.jpg" alt="Organic African Nectar"
+                 onmouseover="this.src='images/loose_organic_african_nectar.jpg'"
+                 onmouseout="this.src='images/1LB_org_african_nectar.jpg'">
+            <h3>Organic African Nectar</h3>
+            <p>Rooibos con vainilla, hibisco y frutas tropicales.</p>
+        </div>
+        
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const input = document.getElementById("searchInput");
+    const buttons = document.querySelectorAll('.tab-button');
+    const sections = document.querySelectorAll('.productos');
+
+    function mostrarPestaña(tabId) {
+        buttons.forEach(btn => btn.classList.toggle("active", btn.dataset.tab === tabId));
+        sections.forEach(sec => {
+            const activa = sec.id === tabId;
+            sec.classList.toggle("active", activa);
+            sec.style.display = activa ? "flex" : "none";
+            if (activa) {
+                sec.querySelectorAll(".producto").forEach(p => p.style.display = "block");
+            }
+        });
+    }
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            input.value = "";
+            mostrarPestaña(btn.dataset.tab);
+        });
+    });
+
+    input.addEventListener("input", () => {
+        const query = input.value.trim().toLowerCase();
+
+        if (query === "") {
+            mostrarPestaña("negros");
+            return;
+        }
+
+        buttons.forEach(b => b.classList.remove("active"));
+        sections.forEach(sec => {
+            let hayCoincidencias = false;
+            sec.querySelectorAll(".producto").forEach(p => {
+                const visible = p.innerText.toLowerCase().includes(query);
+                p.style.display = visible ? "block" : "none";
+                if (visible) hayCoincidencias = true;
+            });
+            sec.style.display = hayCoincidencias ? "flex" : "none";
+            sec.classList.add("active");
+        });
+    });
+});
+</script>
+
+</body>
+</html>

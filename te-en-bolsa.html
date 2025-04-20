@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Té en Bolsa | Mighty Leaf Tea México</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .selector { display: flex; justify-content: center; margin-top: 20px; gap: 20px; }
+        .selector button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ccc;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .selector button.active {
+            background-color: #444;
+            color: white;
+        }
+        .productos { display: none; flex-wrap: wrap; justify-content: center; margin-top: 30px; gap: 20px; }
+        .productos.active { display: flex; }
+        .producto {
+            width: 280px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .producto:hover { transform: scale(1.05); }
+        .producto img {
+    height: 290px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+    
+
+<header>
+    <div class="container">
+        <a href="index.html"><img src="images/MLT_Logo_Reverse_Stack.png" alt="Logo" height="60"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="te-en-bolsa.html">Té en Bolsa</a></li>
+                <li><a href="te-suelto.html">Té Suelto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar" style="margin-left: 20px;">
+            <input type="text" id="searchInput" placeholder="Buscar tés..." style="padding: 6px 10px; border-radius: 4px; border: none;">
+        </div>
+    </div>
+</header>
+
+
+
+    <main>
+        <h1 style="text-align:left; margin: 40px;">Té en Bolsa</h1>
+        
+<div class="selector" style="text-align: center; margin-top: 40px;">
+    <button class="tab-button active" data-tab="negros">Negros</button>
+    <button class="tab-button" data-tab="verdes">Verdes</button>
+    <button class="tab-button" data-tab="infusiones">Infusiones</button>
+</div>
+<div id="negros" class="productos active">
+
+        <div class="producto">
+            <img src="images/organic_breakfast.jpg" alt="Organic Breakfast"
+                 onmouseover="this.src='images/pouch_organic_breakfast.jpg'"
+                 onmouseout="this.src='images/organic_breakfast.jpg'">
+            <h3>Organic Breakfast</h3>
+            <p>Una mezcla robusta de las mejores hojas de té negro orgánico: estupendo solo o con leche.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/organic_earl_grey.jpg" alt="Organic Earl Grey"
+                 onmouseover="this.src='images/pouch_organic_earl_grey.jpg'"
+                 onmouseout="this.src='images/organic_earl_grey.jpg'">
+            <h3>Organic Earl Grey</h3>
+            <p>Elaborado con té negro y bergamota: taza clásica elegante y equilibrada.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/masala_chai.jpg" alt="Masala Chai"
+                 onmouseover="this.src='images/pouch-masala_chai.jpg'"
+                 onmouseout="this.src='images/masala_chai.jpg'">
+            <h3>Masala Chai</h3>
+            <p>Té negro con especias: canela, jengibre, cardamomo y clavo.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/organic_dargeeling.jpg" alt="Organic Darjeeling"
+                 onmouseover="this.src='images/pouch_org_darjeeling.jpg'"
+                 onmouseout="this.src='images/organic_dargeeling.jpg'">
+            <h3>Organic Darjeeling</h3>
+            <p>Té negro del Himalaya: final floral, dulce y persistente.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/orange_blossom.jpg" alt="Orange Blossom"
+                 onmouseover="this.src='images/pouch_orange_blossom.jpg'"
+                 onmouseout="this.src='images/orange_blossom.jpg'">
+            <h3>Orange Blossom</h3>
+            <p>Té negro aromático con bergamota, vainilla y jazmín.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/vanilla_bean.jpg" alt="Vanilla Bean"
+                 onmouseover="this.src='images/pouch_vanilla_bean.jpg'"
+                 onmouseout="this.src='images/vanilla_bean.jpg'">
+            <h3>Vanilla Bean</h3>
+            <p>Té negro con vainilla de Madagascar: dulce y reconfortante.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/decaf_earl_grey.jpg" alt="Decaf Earl Grey"
+                 onmouseover="this.src='images/pouch_decaf_earl_grey.jpg'"
+                 onmouseout="this.src='images/decaf_earl_grey.jpg'">
+            <h3>Decaf Earl Grey</h3>
+            <p>Versión descafeinada del clásico Earl Grey con bergamota.</p>
+        </div>
+        </div>
+<div id="verdes" class="productos">
+
+        <div class="producto">
+            <img src="images/green_tea_tropical.jpg" alt="Green Tea Tropical"
+                 onmouseover="this.src='images/pouch_green_tea_tropical.jpg'"
+                 onmouseout="this.src='images/green_tea_tropical.jpg'">
+            <h3>Green Tea Tropical</h3>
+            <p>Té verde con frutas tropicales: estimulante y refrescante.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/jasmine_green_tea.jpg" alt="Organic Spring Jasmine"
+                 onmouseover="this.src='images/pouch_org_spring_jasmine.jpg'"
+                 onmouseout="this.src='images/jasmine_green_tea.jpg'">
+            <h3>Organic Spring Jasmine</h3>
+            <p>Té verde chino perfumado con flores de jazmín.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/org_green_dragon.jpg" alt="Organic Green Dragon"
+                 onmouseover="this.src='images/pouch_org_green_dragon.jpg'"
+                 onmouseout="this.src='images/org_green_dragon.jpg'">
+            <h3>Organic Green Dragon</h3>
+            <p>Té Dragonwell orgánico: suave, avellanado.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/white_orchard.jpg" alt="White Orchard"
+                 onmouseover="this.src='images/pouch_white_orchard.jpg'"
+                 onmouseout="this.src='images/white_orchard.jpg'">
+            <h3>White Orchard</h3>
+            <p>Té blanco y verde con notas de melón y melocotón.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/org_roasted_hojicha.jpg" alt="Organic Roasted Hojicha"
+                 onmouseover="this.src='images/pouch_org_roasted_hojicha.jpg'"
+                 onmouseout="this.src='images/org_roasted_hojicha.jpg'">
+            <h3>Organic Roasted Hojicha</h3>
+            <p>Té verde bancha tostado: rico y avellanado.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/marrakesh_mint.jpg" alt="Marrakesh Mint"
+                 onmouseover="this.src='images/pouch_marrakesh_mint.jpg'"
+                 onmouseout="this.src='images/marrakesh_mint.jpg'">
+            <h3>Marrakesh Mint</h3>
+            <p>Té verde Gunpowder con menta marroquí.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/org_emerald_matcha.jpg" alt="Organic Emerald Matcha"
+                 onmouseover="this.src='images/pouch_org_emerald_matcha.jpg'"
+                 onmouseout="this.src='images/org_emerald_matcha.jpg'">
+            <h3>Organic Emerald Matcha</h3>
+            <p>Matcha con Sencha: cuerpo cremoso y sabor fresco.</p>
+        </div>
+        </div>
+<div id="infusiones" class="productos">
+
+        <div class="producto">
+            <img src="images/chamomile_citrus.jpg" alt="Chamomile Citrus"
+                 onmouseover="this.src='images/pouch_chamomile_citrus.jpg'"
+                 onmouseout="this.src='images/chamomile_citrus.jpg'">
+            <h3>Chamomile Citrus</h3>
+            <p>Infusión de manzanilla, naranja dulce y limón.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/african_nectar.jpg" alt="Organic African Nectar"
+                 onmouseover="this.src='images/pouch_org_african_nectar.jpg'"
+                 onmouseout="this.src='images/african_nectar.jpg'">
+            <h3>Organic African Nectar</h3>
+            <p>Rooibos con notas de vainilla, hibisco y frutas.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/mint_melange.jpg" alt="Organic Mint Melange"
+                 onmouseover="this.src='images/pouch_org_mint_melange.jpg'"
+                 onmouseout="this.src='images/mint_melange.jpg'">
+            <h3>Organic Mint Melange</h3>
+            <p>Infusión de hojas de menta verde orgánica.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/wild_berry_hibiscus.jpg" alt="Wild Berry Hibiscus"
+                 onmouseover="this.src='images/pouch_wild_berry_hibiscus.jpg'"
+                 onmouseout="this.src='images/wild_berry_hibiscus.jpg'">
+            <h3>Wild Berry Hibiscus</h3>
+            <p>Hibisco con bayas: vibrante y afrutado.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/ginger_twist.jpg" alt="Ginger Twist"
+                 onmouseover="this.src='images/pouch_ginger_twist.jpg'"
+                 onmouseout="this.src='images/ginger_twist.jpg'">
+            <h3>Ginger Twist</h3>
+            <p>Infusión de jengibre, frutas y menta.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/turmeric_ginger.jpg" alt="Organic Turmeric Ginger"
+                 onmouseover="this.src='images/pouch_turmeric_ginger.png'"
+                 onmouseout="this.src='images/turmeric_ginger.jpg'">
+            <h3>Organic Turmeric Ginger</h3>
+            <p>Cúrcuma y jengibre con especias y menta.</p>
+        </div>
+        
+        <div class="producto">
+            <img src="images/decaf_earl_grey.jpg" alt="Decaf Earl Grey"
+                 onmouseover="this.src='images/pouch_decaf_earl_grey.jpg'"
+                 onmouseout="this.src='images/decaf_earl_grey.jpg'">
+            <h3>Decaf Earl Grey</h3>
+            <p>Infusión cítrica descafeinada con bergamota.</p>
+        </div>
+        </div>
+
+</main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mighty Leaf Tea México</p>
+        </div>
+    </footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const input = document.getElementById("searchInput");
+    const buttons = document.querySelectorAll('.tab-button');
+    const sections = document.querySelectorAll('.productos');
+
+    function mostrarPestaña(tabId) {
+        buttons.forEach(btn => btn.classList.toggle("active", btn.dataset.tab === tabId));
+        sections.forEach(sec => {
+            const activa = sec.id === tabId;
+            sec.classList.toggle("active", activa);
+            sec.style.display = activa ? "flex" : "none";
+            if (activa) {
+                sec.querySelectorAll(".producto").forEach(p => p.style.display = "block");
+            }
+        });
+    }
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            input.value = "";
+            mostrarPestaña(btn.dataset.tab);
+        });
+    });
+
+    input.addEventListener("input", () => {
+        const query = input.value.trim().toLowerCase();
+
+        if (query === "") {
+            mostrarPestaña("negros");
+            return;
+        }
+
+        buttons.forEach(b => b.classList.remove("active"));
+        sections.forEach(sec => {
+            let hayCoincidencias = false;
+            sec.querySelectorAll(".producto").forEach(p => {
+                const visible = p.innerText.toLowerCase().includes(query);
+                p.style.display = visible ? "block" : "none";
+                if (visible) hayCoincidencias = true;
+            });
+            sec.style.display = hayCoincidencias ? "flex" : "none";
+            sec.classList.add("active");
+        });
+    });
+});
+</script>
+
+</body>
+</html>
